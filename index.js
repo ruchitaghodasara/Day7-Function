@@ -32,3 +32,12 @@ function convertCelsiusToFahrenheit(cel) {
 }
 
 console.log(convertCelsiusToFahrenheit(20));
+
+function findMax(a, b, c) {
+  let aA = a,
+    bB = b,
+    cC = c;
+
+  if (aA > bB || aA > cC || bB > cC) {
+  }
+}
