@@ -37,7 +37,13 @@ function findMax(a, b, c) {
   let aA = a,
     bB = b,
     cC = c;
-
-  if (aA > bB || aA > cC || bB > cC) {
+  if (aA > bB && aA > cC) {
+    return aA;
+  } else if (bB > aA && bB > cC) {
+    return bB;
+  } else if (cC > aA && cC > bB) {
+    return cC;
   }
 }
+
+console.log(findMax(1, 2, 3));
